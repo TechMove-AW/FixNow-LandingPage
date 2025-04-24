@@ -1,0 +1,1243 @@
+:root {
+  --dark-blue: #29405a;
+  --blue: #2247c0;
+  --light-blue: #3e72ad;
+  --turquoise: #42caca;
+  --yellow: #ffd900;
+  --black: #000000;
+  --gray: #d9d9d9;
+  --white: #ffffff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  position: relative;
+  overflow-x: hidden;
+  background-color: var(--white);
+}
+
+.welcomeSection {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.backgroundImage {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.backgroundImage img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.contentWrapper {
+  position: relative;
+  z-index: 1;
+  height: 100%;
+}
+
+.topNavigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 5%;
+  height: 80px;
+  background-color: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(5px);
+}
+
+.brandLogo {
+  display: flex;
+  align-items: center;
+}
+
+.logoImage {
+  width: 48px;
+  height: auto;
+  margin-right: 12px;
+}
+
+.logoText {
+  height: 36px;
+  width: auto;
+  color: var(--white);
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.navigationMenu {
+  display: flex;
+  list-style: none;
+}
+
+.navigationMenu li {
+  margin: 0 35px;
+}
+
+.navigationMenu a {
+  text-decoration: none;
+  color: var(--white);
+  font-size: 18px;
+}
+
+.signUpButton {
+  background-color: var(--blue);
+  color: var(--yellow);
+  border: none;
+  border-radius: 24px;
+  padding: 10px 28px;
+  font-weight: bold;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.menuButton {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.menuButton span {
+  width: 30px;
+  height: 4px;
+  background-color: var(--white);
+  margin: 3px 0;
+  transition: all 0.3s ease;
+}
+
+.welcomeContent {
+  padding: 5% 5%;
+  color: white;
+}
+
+.mainMessage {
+  width: 45%;
+}
+
+.mainMessage h1 {
+  font-size: 3rem;
+  margin-bottom: 1.8rem;
+}
+
+.mainMessage p {
+  font-size: 1.3rem;
+  line-height: 1.6;
+  margin-bottom: 2.4rem;
+  max-width: 600px;
+}
+
+.keyFeatures {
+  margin-top: 2.4rem;
+}
+
+.featureItem {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.featureIcon {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 1.2rem;
+  background-color: var(--white);
+}
+
+.featureIcon.tools {
+  background-color: var(--white);
+}
+
+.featureIcon.lightning {
+  background-color: var(--blue);
+}
+
+.featureIcon.location {
+  background-color: var(--turquoise);
+}
+
+.featureIcon img {
+  width: 24px;
+  height: auto;
+}
+
+.featureItem span {
+  font-size: 1.1rem;
+}
+
+.callToAction {
+  margin-top: 2.4rem;
+}
+
+.callToAction p {
+  margin-bottom: 1.8rem;
+  font-size: 1.3rem;
+}
+
+.loginButton {
+  background-color: var(--blue);
+  color: var(--yellow);
+  border: none;
+  border-radius: 30px;
+  padding: 14px 36px;
+  font-weight: bold;
+  font-size: 18px;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+.colorCircles {
+  position: absolute;
+  bottom: 20px;
+  right: 30px;
+  display: flex;
+  flex-direction: row;
+  z-index: 2;
+}
+
+.circle {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
+
+.circle:not(:first-child) {
+  margin-left: -30px;
+}
+
+.grayCircle {
+  background-color: #67686b;
+}
+
+.blueCircle {
+  background-color: #071646;
+}
+
+.yellowCircle {
+  background-color: #ffd900;
+}
+
+.expertServices {
+  padding: 40px 10%;
+  background-color: var(--white);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  min-height: 720px;
+}
+
+.expertInfo {
+  width: 35%;
+  color: var(--dark-blue);
+}
+
+.expertInfo h2 {
+  font-size: 2.4rem;
+  line-height: 1.3;
+  margin-bottom: 1.8rem;
+  text-transform: uppercase;
+}
+
+.expertInfo p {
+  font-size: 1.1rem;
+  line-height: 1.5;
+  margin-bottom: 2rem;
+}
+
+.learnMoreButton {
+  background-color: var(--yellow);
+  color: var(--dark-blue);
+  border: none;
+  border-radius: 25px;
+  padding: 14px 32px;
+  font-weight: bold;
+  cursor: pointer;
+  display: inline-block;
+  text-decoration: none;
+  font-size: 1.05rem;
+}
+
+.expertImages {
+  width: 60%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 15px;
+  height: 720px;
+}
+
+.imageCard {
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+}
+
+.imageCard img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.imageCard:nth-child(1) {
+  grid-column: 1;
+  grid-row: 1 / span 2;
+  height: 475px;
+}
+
+.imageCard:nth-child(2) {
+  grid-column: 2;
+  grid-row: 1;
+  height: 230px;
+}
+
+.imageCard:nth-child(3) {
+  grid-column: 2;
+  grid-row: 2 / span 2;
+  height: 475px;
+}
+
+.imageCard:nth-child(4) {
+  grid-column: 1;
+  grid-row: 3;
+  height: 230px;
+}
+
+.statsContainer {
+  display: flex;
+  justify-content: center;
+  padding: 20px 0;
+  margin-bottom: 20px;
+}
+
+.statsWrapper {
+  background-color: var(--dark-blue);
+  padding: 20px 5%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--white);
+  width: 80%;
+  max-width: 1200px;
+  border-radius: 20px;
+}
+
+.statBox {
+  text-align: center;
+  padding: 0 20px;
+}
+
+.statValue {
+  color: var(--yellow);
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.statDescription {
+  font-size: 1rem;
+}
+
+.serviceList {
+  padding: 20px 5%;
+  background-color: var(--white);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.servicesIntro {
+  text-align: center;
+  margin-bottom: 15px;
+  width: 100%;
+}
+
+.serviceHeading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.serviceIcon {
+  width: 24px;
+  height: auto;
+  margin-right: 10px;
+}
+
+.servicesIntro h2 {
+  font-size: 1.6rem;
+  color: var(--dark-blue);
+  font-weight: bold;
+}
+
+.serviceSubtitle {
+  font-size: 0.9rem;
+  color: var(--dark-blue);
+  margin-bottom: 15px;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.servicesHighlight {
+  font-family: "Dancing Script", cursive;
+  font-size: 1.3rem;
+  color: var(--dark-blue);
+  position: relative;
+  display: inline-block;
+  margin-bottom: 15px;
+}
+
+.servicesHighlight::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 100%;
+  height: 2px;
+  background-color: var(--dark-blue);
+}
+
+.servicesGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 15px;
+  width: 100%;
+  max-width: 1000px;
+}
+
+.serviceItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.serviceImageWrapper {
+  width: 100%;
+  height: 0;
+  padding-bottom: 70%;
+  border-radius: 6px;
+  overflow: hidden;
+  position: relative;
+}
+
+.serviceImageWrapper img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.serviceTitle {
+  margin-top: 6px;
+  font-size: 0.9rem;
+  color: var(--dark-blue);
+  font-weight: bold;
+}
+
+.iotProduct {
+  padding: 80px 0;
+  background: linear-gradient(to top, #395a7e 10%, #ffffff);
+  width: 100%;
+  min-height: 110vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  margin-bottom: 0;
+}
+
+.iotProductWrapper {
+  width: 95%;
+  max-width: 1600px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.iotHeading {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+  justify-content: flex-start;
+}
+
+.iotLogo {
+  width: 60px;
+  height: auto;
+  margin-right: 20px;
+}
+
+.iotHeading h2 {
+  font-size: 3.5rem;
+  font-weight: bold;
+  color: #000000;
+}
+
+.iotDetails {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 50px;
+  width: 100%;
+}
+
+.iotDescription {
+  width: 58%;
+  padding-right: 50px;
+}
+
+.iotText {
+  color: #29405a;
+  font-size: 1.4rem;
+  line-height: 1.6;
+  margin-bottom: 40px;
+  max-width: 100%;
+}
+
+.iotBenefitsTitle {
+  font-size: 2.3rem;
+  font-weight: bold;
+  margin-bottom: 35px;
+  color: #000000;
+}
+
+.iotBenefits {
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+  padding-top: 25px;
+}
+
+.benefitItem {
+  display: flex;
+  align-items: center;
+}
+
+.yellowCircle {
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+  background-color: #ffd900;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 25px;
+  flex-shrink: 0;
+}
+
+.yellowCircle img {
+  width: 38px;
+  height: auto;
+}
+
+.benefitText p {
+  font-size: 1.4rem;
+  color: #000000;
+  font-weight: 500;
+  line-height: 1.5;
+}
+
+.iotSidebar {
+  width: 42%;
+  display: flex;
+  flex-direction: column;
+}
+
+.iotProductImages {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+  position: relative;
+  height: 150px;
+}
+
+.productImage {
+  width: 45%;
+  max-width: 180px;
+  height: auto;
+  margin: 0 12px;
+  position: relative;
+  top: -20px;
+}
+
+.priceContainer {
+  background-color: #ffffff;
+  border-radius: 15px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  padding: 30px;
+  position: relative;
+}
+
+.priceHeading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px 0;
+}
+
+.cartIcon {
+  width: 30px;
+  height: auto;
+  margin-right: 18px;
+}
+
+.priceHeading h3 {
+  font-family: "DM Sans", sans-serif;
+  font-weight: 900;
+  font-size: 34px;
+  line-height: 110%;
+  text-align: center;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.priceSeparator {
+  height: 6px;
+  background-color: #42caca;
+  margin: 18px 0;
+}
+
+.featuresList li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 16px;
+  font-family: "DM Sans", sans-serif;
+  font-weight: 400;
+  font-size: 21px;
+  line-height: 120%;
+  letter-spacing: 0%;
+  text-transform: capitalize;
+  color: #000000;
+}
+
+.checkmarkImage {
+  width: 18px;
+  height: 18px;
+  margin-right: 12px;
+}
+
+.stockDetails {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 0;
+}
+
+.boxIcon {
+  width: 30px;
+  height: auto;
+  margin-right: 18px;
+}
+
+.stockDetails p {
+  font-family: "DM Sans", sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 45px;
+  letter-spacing: 0%;
+  text-transform: capitalize;
+}
+
+.reserveButton {
+  background-color: #42caca;
+  color: rgba(255, 255, 255, 0.7);
+  border: none;
+  border-radius: 50px;
+  width: 180px;
+  height: 68px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 800;
+  font-size: 28px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-align: center;
+  font-variant: small-caps;
+  cursor: pointer;
+  position: absolute;
+  bottom: -34px;
+  right: 50px;
+}
+
+.customerReviews {
+  padding: 100px 5% 120px;
+  background: linear-gradient(180deg, #395a7e 0%, #29405a 20%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  min-height: 100vh;
+  margin-top: -1px;
+  position: relative;
+}
+
+.reviewsTitle {
+  font-size: 3.5rem;
+  color: #ffffff;
+  margin-bottom: 60px;
+  text-align: center;
+  font-weight: 500;
+}
+
+.reviewsContainer {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  max-width: 1300px;
+  width: 100%;
+}
+
+.reviewCard {
+  background-color: #ffffff;
+  border-radius: 20px;
+  padding: 35px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: calc(33.33% - 20px);
+  box-shadow: 4px 4px 4px 2px #3e72ad;
+}
+
+.reviewImage {
+  width: 150px;
+  height: 200px;
+  border-radius: 8px;
+  object-fit: cover;
+  margin-bottom: 25px;
+}
+
+.reviewText {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  color: #29405a;
+  margin-bottom: 20px;
+}
+
+.reviewStars {
+  margin-bottom: 15px;
+  font-size: 1.3rem;
+}
+
+.reviewAuthor {
+  font-family: "Playwrite US Trad", cursive;
+  font-size: 1.3rem;
+  color: #29405a;
+  font-weight: 500;
+}
+
+.contactSection {
+  padding: 80px 5% 80px;
+  background: #29405a;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  min-height: 120vh;
+}
+
+.contactSection::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 300px;
+  background-image: url("/imagenes/contacto_background.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: 0;
+}
+
+.contactTitle {
+  font-size: 3.5rem;
+  color: #3e72ad;
+  margin-bottom: 20px;
+  text-align: center;
+  font-weight: 700;
+  position: relative;
+  z-index: 1;
+  top: 0;
+}
+
+.contactWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px;
+  position: relative;
+  z-index: 1;
+}
+
+.contactMessage {
+  text-align: center;
+  color: #3e72ad;
+  font-size: 1.2rem;
+  margin-bottom: 60px;
+  max-width: 800px;
+  position: relative;
+  z-index: 1;
+  margin-top: 20px;
+}
+
+.contactFormWrapper {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  background-color: #29405a;
+  padding: 40px;
+  border-radius: 10px;
+  margin-bottom: 60px;
+}
+
+.contactForm {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+}
+
+.formField {
+  margin-bottom: 30px;
+}
+
+.formField label {
+  display: block;
+  color: #ffffff;
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+}
+
+.formField input,
+.formField textarea {
+  width: 100%;
+  padding: 12px;
+  border-radius: 8px;
+  border: none;
+  background-color: #e6e6e6;
+}
+
+.formField textarea {
+  height: 200px;
+  resize: none;
+}
+
+.submitButton {
+  background-color: #888888;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  padding: 12px 0;
+  font-weight: bold;
+  font-size: 18px;
+  cursor: pointer;
+  width: 100%;
+  max-width: 500px;
+  align-self: center;
+  margin-top: 20px;
+  text-transform: uppercase;
+}
+
+.contactDetails {
+  width: 35%;
+  padding-left: 40px;
+  display: flex;
+  flex-direction: column;
+}
+
+.socialLinks {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 30px;
+}
+
+.socialLinks img {
+  width: 40px;
+  height: 40px;
+}
+
+.companyName {
+  font-size: 1.4rem;
+  font-weight: bold;
+  margin-bottom: 30px;
+  color: #d5d5d5;
+}
+
+.contactEmailLabel,
+.contactPhoneLabel {
+  font-size: 1.2rem;
+  margin-bottom: 5px;
+  color: #d5d5d5;
+}
+
+.emailAddress a {
+  font-size: 1.2rem;
+  color: #ffd900;
+  text-decoration: underline;
+  margin-bottom: 30px;
+  display: block;
+}
+
+.phoneNumber {
+  font-size: 1.2rem;
+  color: #ffd900;
+  text-decoration: none;
+  margin-bottom: 30px;
+  display: block;
+}
+
+.siteFooter {
+  background-color: #29405a;
+  padding: 60px 5% 80px;
+  color: white;
+}
+
+.footerContent {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-bottom: 40px;
+}
+
+.aboutUs,
+.quickLinks,
+.socialMedia {
+  width: 30%;
+}
+
+.aboutUs h3,
+.quickLinks h3,
+.socialMedia h3 {
+  color: #ffd900;
+  font-size: 1.3rem;
+  margin-bottom: 20px;
+}
+
+.aboutUs p {
+  line-height: 1.5;
+}
+
+.quickLinks ul {
+  list-style: none;
+}
+
+.quickLinks li {
+  margin-bottom: 10px;
+}
+
+.quickLinks a {
+  color: white;
+  text-decoration: none;
+}
+
+.socialMediaIcons {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.socialMediaIcons img {
+  width: 35px;
+  height: 35px;
+}
+
+.footerCopyright {
+  text-align: center;
+  padding-top: 30px;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+  .menuButton {
+    display: flex;
+  }
+
+  .navigationMenu {
+    display: none;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(255, 255, 255, 0.95);
+    padding: 80px 20px 20px;
+    transition: right 0.3s ease-in-out;
+    z-index: 1000;
+  }
+
+  .navigationMenu.active {
+    display: flex;
+    right: 0;
+  }
+
+  .navigationMenu li {
+    margin: 20px 0;
+    text-align: center;
+  }
+
+  .navigationMenu a {
+    color: var(--dark-blue);
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+    position: relative;
+    display: inline-block;
+  }
+
+  .navigationMenu a::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -5px;
+    width: 50%;
+    height: 2px;
+    background-color: var(--dark-blue);
+  }
+
+  .signUpButton {
+    display: none;
+  }
+
+  .mainMessage {
+    width: 100%;
+    text-align: center;
+  }
+
+  .mainMessage h1 {
+    font-size: 2.5rem;
+  }
+
+  .mainMessage p {
+    font-size: 1.1rem;
+  }
+
+  .keyFeatures {
+    justify-content: center;
+  }
+
+  .featureItem {
+    justify-content: center;
+  }
+
+  .loginButton {
+    font-size: 16px;
+    padding: 12px 30px;
+  }
+
+  .colorCircles {
+    right: 25px;
+  }
+
+  .circle {
+    width: 50px;
+    height: 50px;
+  }
+
+  .circle:not(:first-child) {
+    margin-left: -25px;
+  }
+
+  .expertServices {
+    flex-direction: column;
+    min-height: auto;
+    padding: 20px 5%;
+  }
+
+  .expertInfo {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  .expertImages {
+    width: 100%;
+    height: auto;
+    grid-template-columns: 1fr;
+  }
+
+  .imageCard {
+    height: 300px !important;
+  }
+
+  .imageCard:nth-child(1),
+  .imageCard:nth-child(2),
+  .imageCard:nth-child(3),
+  .imageCard:nth-child(4) {
+    grid-column: auto;
+    grid-row: auto;
+  }
+
+  .statsWrapper {
+    flex-direction: column;
+    width: 90%;
+  }
+
+  .statBox {
+    margin: 10px 0;
+  }
+
+  .servicesGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .serviceImageWrapper {
+    padding-bottom: 65%;
+  }
+
+  .iotProduct {
+    min-height: auto;
+    padding: 40px 0;
+  }
+
+  .iotDetails {
+    flex-direction: column;
+  }
+
+  .iotDescription {
+    width: 100%;
+    padding-right: 0;
+    margin-bottom: 40px;
+  }
+
+  .iotSidebar {
+    width: 100%;
+  }
+
+  .iotProductImages {
+    height: 120px;
+  }
+
+  .customerReviews {
+    padding: 50px 5%;
+    min-height: auto;
+  }
+
+  .reviewsContainer {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .reviewCard {
+    width: 100%;
+    padding: 20px;
+  }
+
+  .contactFormWrapper {
+    flex-direction: column;
+  }
+
+  .contactForm,
+  .contactDetails {
+    width: 100%;
+    padding-left: 0;
+  }
+
+  .contactDetails {
+    margin-top: 40px;
+  }
+
+  .footerContent {
+    flex-direction: column;
+  }
+
+  .aboutUs,
+  .quickLinks,
+  .socialMedia {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 576px) {
+  .servicesGrid {
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 10px;
+  }
+
+  .servicesIntro h2 {
+    font-size: 1.4rem;
+  }
+
+  .iotHeading h2 {
+    font-size: 2.5rem;
+  }
+
+  .iotText {
+    font-size: 1.2rem;
+  }
+
+  .iotBenefitsTitle {
+    font-size: 1.8rem;
+  }
+
+  .benefitText p {
+    font-size: 1.2rem;
+  }
+
+  .priceHeading h3 {
+    font-size: 28px;
+  }
+
+  .featuresList li {
+    font-size: 18px;
+  }
+
+  .stockDetails p {
+    font-size: 20px;
+  }
+
+  .reserveButton {
+    width: 160px;
+    height: 60px;
+    font-size: 24px;
+    bottom: -30px;
+    right: 30px;
+  }
+
+  .reviewsTitle {
+    font-size: 2.5rem;
+  }
+
+  .contactTitle {
+    font-size: 2.5rem;
+  }
+
+  .colorCircles {
+    right: 20px;
+  }
+
+  .circle {
+    width: 40px;
+    height: 40px;
+  }
+
+  .circle:not(:first-child) {
+    margin-left: -15px;
+  }
+}
