@@ -23,38 +23,45 @@
     />
   </head>
   <body>
-    <header class="welcomeSection">
+    <!-- NAVEGACIÓN GLOBAL (MOVIDA FUERA DEL HEADER) -->
+    <nav class="topNavigation">
+      <div class="brandLogo">
+        <img
+          alt="Tres llaves inglesas"
+          class="logoImage"
+          src="imagenes/3-llaves-inglesas-parte-superior-izquiera-parte-del-logo.png"
+        />
+        <span class="logoText">FIX IT</span>
+      </div>
+      <div class="menuButton">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <ul class="navigationMenu">
+        <li><a href="#welcomeSection" data-es="Inicio" data-en="Home">Inicio</a></li>
+        <li><a href="#serviceList" data-es="Servicios" data-en="Services">Servicios</a></li>
+        <li><a href="#iotProduct" data-es="Producto" data-en="Product">Producto</a></li>
+        <li><a href="#customerReviews" data-es="Testimonios" data-en="Testimonials">Testimonios</a></li>
+        <li><a href="#contactSection" data-es="Contáctanos" data-en="Contact Us">Contáctanos</a></li>
+      </ul>
+      <div class="nav-actions">
+        <a href="#" class="languageSwitcher" id="languageSwitcher">EN / ES</a>
+        <a href="https://fixit-app-1.vercel.app/login" class="signUpButton" data-es="REGISTRARSE" data-en="SIGN UP">REGISTRARSE</a>
+      </div>
+    </nav>
+
+    <!-- SECCIÓN DE BIENVENIDA -->
+    <header class="welcomeSection" id="welcomeSection">
       <div class="backgroundImage">
         <img src="imagenes/background.png" alt="Fondo con técnico" />
       </div>
       <div class="contentWrapper">
-        <nav class="topNavigation">
-          <div class="brandLogo">
-            <img
-              alt="Tres llaves inglesas"
-              class="logoImage"
-              src="imagenes/3-llaves-inglesas-parte-superior-izquiera-parte-del-logo.png"
-            />
-            <span class="logoText">FIX IT</span>
-          </div>
-          <div class="menuButton">
-            <span></span>
-            <span></span>
-            <span></span>
-          </div>
-          <ul class="navigationMenu">
-            <li><a href="#welcomeSection">Inicio</a></li>
-            <li><a href="#serviceList">Servicios</a></li>
-            <li><a href="#iotProduct">Producto</a></li>
-            <li><a href="#customerReviews">Testimonios</a></li>
-            <li><a href="#contactSection">Contactanos</a></li>
-          </ul>
-          <a href="https://fixit-app-1.vercel.app/login" class="signUpButton">REGISTRASE</a>
-        </nav>
+        <!-- La navegación ya no está aquí -->
         <div class="welcomeContent">
           <div class="mainMessage">
-            <h1>Servicios técnicos y de mantenimiento al instante</h1>
-            <p>
+            <h1 data-es="Servicios técnicos y de mantenimiento al instante" data-en="Instant technical and maintenance services">Servicios técnicos y de mantenimiento al instante</h1>
+            <p data-es="¿Tienes una fuga, necesitas pintar tu casa o instalar una campana extractora? En Fix Now te conectamos con profesionales confiables en plomería, electricidad, pintura, carpintería y mucho más." data-en="Have a leak, need to paint your house, or install a range hood? At Fix Now, we connect you with reliable professionals in plumbing, electricity, painting, carpentry, and much more.">
               ¿Tienes una fuga, necesitas pintar tu casa o instalar una campana
               extractora? En Fix Now te conectamos con profesionales confiables
               en plomería, electricidad, pintura, carpintería y mucho más.
@@ -67,27 +74,27 @@
                     alt="Herramientas"
                   />
                 </div>
-                <span>Técnicos verificados.</span>
+                <span data-es="Técnicos verificados." data-en="Verified technicians.">Técnicos verificados.</span>
               </div>
               <div class="featureItem">
                 <div class="featureIcon lightning">
                   <img src="imagenes/trueno.png" alt="Trueno" />
                 </div>
-                <span>Atención rápida.</span>
+                <span data-es="Atención rápida." data-en="Fast service.">Atención rápida.</span>
               </div>
               <div class="featureItem">
                 <div class="featureIcon location">
                   <img src="imagenes/ubicacion.png" alt="Ubicación" />
                 </div>
-                <span>Cerca de ti.</span>
+                <span data-es="Cerca de ti." data-en="Near you.">Cerca de ti.</span>
               </div>
             </div>
             <div class="callToAction">
-              <p>
+              <p data-es="Solo dinos qué necesitas, y nosotros nos encargamos del resto. Tú relájate en casa." data-en="Just tell us what you need, and we'll take care of the rest. You just relax at home.">
                 Solo dinos qué necesitas, y nosotros nos encargamos del resto.
                 Tú relájate en casa.
               </p>
-              <a class="loginButton" href="https://fixit-app-1.vercel.app/login">INICIAR SESION</a>
+              <a class="loginButton" href="https://fixit-app-1.vercel.app/login" data-es="INICIAR SESIÓN" data-en="LOG IN">INICIAR SESIÓN</a>
             </div>
           </div>
         </div>
@@ -98,16 +105,17 @@
         </div>
       </div>
     </header>
-
+    
+    <!-- SECCIÓN EXPERTOS -->
     <header class="expertServices" id="expertServices">
       <div class="expertInfo">
-        <h2>Expertos en Reparaciones y Mejoras Del Hogar</h2>
-        <p>
+        <h2 data-es="Expertos en Reparaciones y Mejoras Del Hogar" data-en="Experts in Home Repairs and Improvements">Expertos en Reparaciones y Mejoras Del Hogar</h2>
+        <p data-es="¿Tienes una fuga, necesitas pintar tu casa o instalar una campana extractora? En Fix Now te conectamos con profesionales confiables en plomería, electricidad, pintura, carpintería y mucho más." data-en="Have a leak, need to paint your house, or install a range hood? At Fix Now, we connect you with reliable professionals in plumbing, electricity, painting, carpentry, and much more.">
           ¿Tienes una fuga, necesitas pintar tu casa o instalar una campana
           extractora? En Fix Now te conectamos con profesionales confiables en
           plomería, electricidad, pintura, carpintería y mucho más.
         </p>
-        <a class="learnMoreButton" href="#">VER MÁS</a>
+        <a class="learnMoreButton" href="#" data-es="VER MÁS" data-en="LEARN MORE">VER MÁS</a>
       </div>
       <div class="expertImages">
         <div class="imageCard">
@@ -137,27 +145,29 @@
       </div>
     </header>
 
+    <!-- SECCIÓN ESTADÍSTICAS -->
     <div class="statsContainer">
      <div class="statsWrapper">
         <div class="statBox">
           <div class="statValue">+6</div>
-          <div class="statDescription">Categorías</div>
+          <div class="statDescription" data-es="Categorías" data-en="Categories">Categorías</div>
         </div>
         <div class="statBox">
           <div class="statValue">+50</div>
-          <div class="statDescription">Profesionales</div>
+          <div class="statDescription" data-es="Profesionales" data-en="Professionals">Profesionales</div>
         </div>
         <div class="statBox">
           <div class="statValue">+600</div>
-          <div class="statDescription">Usuarios Registros</div>
+          <div class="statDescription" data-es="Usuarios Registrados" data-en="Registered Users">Usuarios Registrados</div>
         </div>
         <div class="statBox">
           <div class="statValue">+300</div>
-          <div class="statDescription">Recomendaciones</div>
+          <div class="statDescription" data-es="Recomendaciones" data-en="Recommendations">Recomendaciones</div>
         </div>
       </div>
     </div>
     
+    <!-- SECCIÓN SERVICIOS -->
     <header class="serviceList" id="serviceList">
       <div class="servicesIntro">
         <div class="serviceHeading">
@@ -166,20 +176,20 @@
             src="imagenes/destornillador-llave.png"
             class="serviceIcon"
           />
-          <h2>Servicios</h2>
+          <h2 data-es="Servicios" data-en="Services">Servicios</h2>
         </div>
-        <p class="serviceSubtitle">
+        <p class="serviceSubtitle" data-es="Contamos Con Profesionales De Distintas Áreas Para Brindarte Soluciones Rápidas, Confiables Y De Calidad." data-en="We have professionals from different areas to provide you with fast, reliable, and quality solutions.">
           Contamos Con Profesionales De Distintas Áreas Para Brindarte
           Soluciones Rápidas, Confiables Y De Calidad.
         </p>
-        <p class="servicesHighlight">Ofrecemos Servicios Como:</p>
+        <p class="servicesHighlight" data-es="Ofrecemos Servicios Como:" data-en="We Offer Services Like:">Ofrecemos Servicios Como:</p>
       </div>
       <div class="servicesGrid">
         <div class="serviceItem">
           <div class="serviceImageWrapper">
             <img src="imagenes/enchufe.png" alt="Electricidad" />
           </div>
-          <p class="serviceTitle">Electricidad</p>
+          <p class="serviceTitle" data-es="Electricidad" data-en="Electricity">Electricidad</p>
         </div>
         <div class="serviceItem">
           <div class="serviceImageWrapper">
@@ -188,25 +198,25 @@
               src="imagenes/gasfitero+destornillador.png"
             />
           </div>
-          <p class="serviceTitle">Gasfitería</p>
+          <p class="serviceTitle" data-es="Gasfitería" data-en="Plumbing">Gasfitería</p>
         </div>
         <div class="serviceItem">
           <div class="serviceImageWrapper">
             <img src="imagenes/gasfitero+tuberia.png" alt="Fontanería" />
           </div>
-          <p class="serviceTitle">Fontanería</p>
+          <p class="serviceTitle" data-es="Fontanería" data-en="Piping">Fontanería</p>
         </div>
         <div class="serviceItem">
           <div class="serviceImageWrapper">
             <img src="imagenes/arreglando-puerta.png" alt="Cerrajería" />
           </div>
-          <p class="serviceTitle">Cerrajería</p>
+          <p class="serviceTitle" data-es="Cerrajería" data-en="Locksmithing">Cerrajería</p>
         </div>
         <div class="serviceItem">
           <div class="serviceImageWrapper">
             <img alt="Albañilería" src="imagenes/pared-ladrillos.png" />
           </div>
-          <p class="serviceTitle">Albañilería</p>
+          <p class="serviceTitle" data-es="Albañilería" data-en="Masonry">Albañilería</p>
         </div>
         <div class="serviceItem">
           <div class="serviceImageWrapper">
@@ -215,51 +225,52 @@
               alt="Carpintería"
             />
           </div>
-          <p class="serviceTitle">Carpintería</p>
+          <p class="serviceTitle" data-es="Carpintería" data-en="Carpentry">Carpintería</p>
         </div>
         <div class="serviceItem">
           <div class="serviceImageWrapper">
             <img src="imagenes/midiendo-pared.png" alt="Pisos/DryWall" />
           </div>
-          <p class="serviceTitle">Pisos/DryWall</p>
+          <p class="serviceTitle" data-es="Pisos/DryWall" data-en="Flooring/DryWall">Pisos/DryWall</p>
         </div>
         <div class="serviceItem">
           <div class="serviceImageWrapper">
             <img alt="Pintura" src="imagenes/pintando.png" />
           </div>
-          <p class="serviceTitle">Pintura</p>
+          <p class="serviceTitle" data-es="Pintura" data-en="Painting">Pintura</p>
         </div>
         <div class="serviceItem">
           <div class="serviceImageWrapper">
             <img src="imagenes/refrigeradora.png" alt="Refrigeración" />
           </div>
-          <p class="serviceTitle">Refrigeración</p>
+          <p class="serviceTitle" data-es="Refrigeración" data-en="Refrigeration">Refrigeración</p>
         </div>
       </div>
     </header>
   
+    <!-- SECCIÓN PRODUCTO IOT -->
     <header class="iotProduct" id="iotProduct">
      <div class="iotProductWrapper">
         <div class="iotHeading">
           <img class="iotLogo" alt="IoT" src="imagenes/producto.png" />
-          <h2>Producto IoT</h2>
+          <h2 data-es="Producto IoT" data-en="IoT Product">Producto IoT</h2>
         </div>
         <div class="iotDetails">
           <div class="iotDescription">
-            <p class="iotText">
+            <p class="iotText" data-es="Nuestro Dispositivo Inteligente Te Permite Monitorear En Tiempo Real El Consumo De Agua Y Electricidad En Tu Hogar. Detecta Anomalías, Previene Fugas Y Reduce Tu Factura Con Recomendaciones Personalizadas." data-en="Our Smart Device allows you to monitor water and electricity consumption in your home in real time. It detects anomalies, prevents leaks, and reduces your bill with personalized recommendations.">
               Nuestro Dispositivo Inteligente Te Permite Monitorear En Tiempo
               Real El Consumo De Agua Y Electricidad En Tu Hogar. Detecta
               Anomalías, Previene Fugas Y Reduce Tu Factura Con Recomendaciones
               Personalizadas.
             </p>
-            <h3 class="iotBenefitsTitle">Beneficios:</h3>
+            <h3 class="iotBenefitsTitle" data-es="Beneficios:" data-en="Benefits:">Beneficios:</h3>
             <div class="iotBenefits">
               <div class="benefitItem">
                 <div class="yellowCircle">
                   <img src="imagenes/gota.png" alt="Ahorro de agua" />
                 </div>
                 <div class="benefitText">
-                  <p>Ahorra Hasta Un 30% En Tus Servicios De Agua Y Luz.</p>
+                  <p data-es="Ahorra Hasta Un 30% En Tus Servicios De Agua Y Luz." data-en="Save up to 30% on your water and electricity bills.">Ahorra Hasta Un 30% En Tus Servicios De Agua Y Luz.</p>
                 </div>
               </div>
               <div class="benefitItem">
@@ -267,7 +278,7 @@
                   <img alt="Notificaciones" src="imagenes/campana.png" />
                 </div>
                 <div class="benefitText">
-                  <p>Notificaciones Instantáneas Ante Consumos Anormales.</p>
+                  <p data-es="Notificaciones Instantáneas Ante Consumos Anormales." data-en="Instant notifications for abnormal consumption.">Notificaciones Instantáneas Ante Consumos Anormales.</p>
                 </div>
               </div>
               <div class="benefitItem">
@@ -275,7 +286,7 @@
                   <img src="imagenes/hoja.png" alt="Ecológico" />
                 </div>
                 <div class="benefitText">
-                  <p>Reduce Tu Huella Ambiental Fácilmente.</p>
+                  <p data-es="Reduce Tu Huella Ambiental Fácilmente." data-en="Easily reduce your environmental footprint.">Reduce Tu Huella Ambiental Fácilmente.</p>
                 </div>
               </div>
             </div>
@@ -300,7 +311,7 @@
                   src="imagenes/carrito.png"
                   class="cartIcon"
                 />
-                <h3>SOLO POR $129 USD</h3>
+                <h3 data-es="SOLO POR $129 USD" data-en="ONLY FOR $129 USD">SOLO POR $129 USD</h3>
               </div>
               <div class="priceSeparator"></div>
               <ul class="featuresList">
@@ -310,10 +321,7 @@
                     src="imagenes/check.png"
                     alt="✓"
                   />
-                  <span
-                    >Dispositivo IoT Inteligente Para Monitoreo De Agua Y
-                    Electricidad.</span
-                  >
+                  <span data-es="Dispositivo IoT Inteligente Para Monitoreo De Agua Y Electricidad." data-en="Smart IoT Device for Water and Electricity Monitoring.">Dispositivo IoT Inteligente Para Monitoreo De Agua Y Electricidad.</span>
                 </li>
                 <li>
                   <img
@@ -321,7 +329,7 @@
                     src="imagenes/check.png"
                     class="checkmarkImage"
                   />
-                  <span>Instalación Profesional En Menos De 2 Horas.</span>
+                  <span data-es="Instalación Profesional En Menos De 2 Horas." data-en="Professional Installation in Less Than 2 Hours.">Instalación Profesional En Menos De 2 Horas.</span>
                 </li>
                 <li>
                   <img
@@ -329,7 +337,7 @@
                     src="imagenes/check.png"
                     alt="✓"
                   />
-                  <span>Reportes Mensuales Automáticos De Consumo.</span>
+                  <span data-es="Reportes Mensuales Automáticos De Consumo." data-en="Automatic Monthly Consumption Reports.">Reportes Mensuales Automáticos De Consumo.</span>
                 </li>
                 <li>
                   <img
@@ -337,23 +345,24 @@
                     src="imagenes/check.png"
                     class="checkmarkImage"
                   />
-                  <span>Mantenimiento Gratuito Durante El Primer Año.</span>
+                  <span data-es="Mantenimiento Gratuito Durante El Primer Año." data-en="Free Maintenance During the First Year.">Mantenimiento Gratuito Durante El Primer Año.</span>
                 </li>
               </ul>
               <div class="priceSeparator"></div>
               <div class="stockDetails">
                 <img class="boxIcon" src="imagenes/caja.png" alt="Stock" />
-                <p>Stock Limitado. ¡Reserva El Tuyo Ahora!</p>
+                <p data-es="Stock Limitado. ¡Reserva El Tuyo Ahora!" data-en="Limited Stock. Reserve Yours Now!">Stock Limitado. ¡Reserva El Tuyo Ahora!</p>
               </div>
-              <button class="reserveButton">RESERVAR</button>
+              <button class="reserveButton" data-es="RESERVAR" data-en="RESERVE">RESERVAR</button>
             </div>
           </div>
         </div>
       </div>
     </header>
 
+    <!-- SECCIÓN TESTIMONIOS -->
     <header class="customerReviews" id="customerReviews">
-      <h2 class="reviewsTitle">Testimonios</h2>
+      <h2 class="reviewsTitle" data-es="Testimonios" data-en="Testimonials">Testimonios</h2>
       <div class="reviewsContainer">
         <div class="reviewCard">
           <img
@@ -361,7 +370,7 @@
             class="reviewImage"
             src="imagenes/renzo.png"
           />
-          <p class="reviewText">
+          <p class="reviewText" data-es="Gracias al dispositivo IoT, detecté una fuga de agua que me estaba costando caro." data-en="Thanks to the IoT device, I detected a water leak that was costing me a lot of money.">
             Gracias al dispositivo IoT, detecté una fuga de agua que me estaba
             costando caro.
           </p>
@@ -374,7 +383,7 @@
             alt="Jorge Molino"
             class="reviewImage"
           />
-          <p class="reviewText">
+          <p class="reviewText" data-es="Las alertas instantáneas me ayudaron a regular el consumo eléctrico de mi hogar." data-en="The instant alerts helped me regulate my home's electricity consumption.">
             Las alertas instantáneas me ayudaron a regular el consumo eléctrico
             de mi hogar.
           </p>
@@ -387,7 +396,7 @@
             src="imagenes/andrea.png"
             alt="Andrea Palma"
           />
-          <p class="reviewText">
+          <p class="reviewText" data-es="La instalación fue rápida y el soporte técnico muy amable. Lo recomiendo totalmente." data-en="The installation was fast and the technical support was very friendly. I totally recommend it.">
             La instalación fue rápida y el soporte técnico muy amable. Lo
             recomiendo totalmente.
           </p>
@@ -397,30 +406,33 @@
       </div>
     </header>
 
+    <!-- SECCIÓN CONTACTO -->
     <header class="contactSection" id="contactSection">
-    <h2 class="contactTitle">Contacto</h2>
       <div class="contactWrapper">
+         <h2 class="contactTitle" data-es="Contacto" data-en="Contact">Contacto</h2>
         <div class="contactMessage">
-          <p>
-            There's Nothing We Like More Than Rolling Up Our Sleeves And
-            Starting A Brand New Project. Let's Make Something Great Together.
+          <p>  </p>
+          <p>  </p>
+          <p data-es="No hay nada que nos guste más que arremangarnos y empezar un nuevo proyecto. Hagamos algo genial juntos." data-en="There's Nothing We Like More Than Rolling Up Our Sleeves And Starting A Brand New Project. Let's Make Something Great Together.">
+            No hay nada que nos guste más que arremangarnos y empezar un nuevo proyecto.
+            Hagamos algo genial juntos.
           </p>
         </div>
         <div class="contactFormWrapper">
           <div class="contactForm">
             <div class="formField">
-              <label for="nombre">Nombre</label>
+              <label for="nombre" data-es="Nombre" data-en="Name">Nombre</label>
               <input id="nombre" type="text" name="nombre" />
             </div>
             <div class="formField">
-              <label for="correo">Correo</label>
+              <label for="correo" data-es="Correo" data-en="Email">Correo</label>
               <input name="correo" type="email" id="correo" />
             </div>
             <div class="formField">
-              <label for="mensaje">Mensaje</label>
+              <label for="mensaje" data-es="Mensaje" data-en="Message">Mensaje</label>
               <textarea name="mensaje" id="mensaje"></textarea>
             </div>
-            <button class="submitButton">ENVIAR</button>
+            <button class="submitButton" data-es="ENVIAR" data-en="SEND">ENVIAR</button>
           </div>
           <div class="contactDetails">
             <div class="socialLinks">
@@ -432,37 +444,38 @@
               /></a>
             </div>
             <p class="companyName">Grain & Mortar</p>
-            <p class="contactEmailLabel">Nuestro Correo:</p>
+            <p class="contactEmailLabel" data-es="Nuestro Correo:" data-en="Our Email:">Nuestro Correo:</p>
             <p class="emailAddress">
               <a href="mailto:Fixit@gmail.com">Fixit@gmail.com</a>
             </p>
-            <p class="contactPhoneLabel">Celular:</p>
+            <p class="contactPhoneLabel" data-es="Celular:" data-en="Phone:">Celular:</p>
             <p class="phoneNumber">402-370-8170</p>
           </div>
         </div>
       </div>
     </header>
 
+    <!-- FOOTER -->
     <footer class="siteFooter">
       <div class="footerContent">
         <div class="aboutUs">
-          <h3>Sobre Nosotros</h3>
-          <p>
+          <h3 data-es="Sobre Nosotros" data-en="About Us">Sobre Nosotros</h3>
+          <p data-es="Descubre la mejor aplicación para contactar profesionales de áreas técnicas." data-en="Discover the best application to contact professionals in technical areas.">
             Descubre la mejor aplicación para contacta profesionales de áreas
             técnicas.
           </p>
         </div>
         <div class="quickLinks">
-          <h3>Enlaces Rápidos</h3>
+          <h3 data-es="Enlaces Rápidos" data-en="Quick Links">Enlaces Rápidos</h3>
           <ul>
-            <li><a href="#welcomeSection">• Inicio</a></li>
-            <li><a href="#serviceList">• Servicios</a></li>
-            <li><a href="#iotProduct">• Producto IoT</a></li>
-            <li><a href="#customerReviews">• Testimonios</a></li>
+            <li><a href="#welcomeSection" data-es="• Inicio" data-en="• Home">• Inicio</a></li>
+            <li><a href="#serviceList" data-es="• Servicios" data-en="• Services">• Servicios</a></li>
+            <li><a href="#iotProduct" data-es="• Producto IoT" data-en="• IoT Product">• Producto IoT</a></li>
+            <li><a href="#customerReviews" data-es="• Testimonios" data-en="• Testimonials">• Testimonios</a></li>
           </ul>
         </div>
         <div class="socialMedia">
-          <h3>Síguenos</h3>
+          <h3 data-es="Síguenos" data-en="Follow Us">Síguenos</h3>
           <div class="socialMediaIcons">
             <a href="#"
               ><img src="imagenes/facebook_blue.png" alt="Facebook"
@@ -474,7 +487,7 @@
         </div>
       </div>
       <div class="footerCopyright">
-        <p>© 2025 Fixit. Todos Los Derechos Reservados.</p>
+        <p data-es="© 2025 Fixit. Todos Los Derechos Reservados." data-en="© 2025 Fixit. All Rights Reserved.">© 2025 Fixit. Todos Los Derechos Reservados.</p>
       </div>
     </footer>
 
